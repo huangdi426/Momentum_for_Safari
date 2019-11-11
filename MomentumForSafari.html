@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MomentumForSafari</title>
+
+    <!-- 插入背景图片 -->
+    <style>
+    body 
+    {
+      background-image: url('bg/Mojave.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat:no-repeat;
+      background-attachment:fixed;
+    }
+    </style>
+
+    <!-- 设置外部样式表 -->
+    <style>
+      html,
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      }
+
+      .f0 {
+        font-size: 144px;
+      }
+    </style>
+    <link href="tachyons.css" rel="stylesheet" />
+
+  </head>
+
+
+  <body>
+
+    <header class="vh-100 dt w-100">
+
+      <!-- background and overlay -->
+      <div
+        id="background"
+        class="dtc v-mid cover ph3 ph4-m ph5-l tc white">
+
+        <!-- time -->
+        <h1 class="f0 fw2 mt0 mb0">
+          <span id="time"></span>
+          <span id="ampm" class="f1 fw1 f-subheadline"></span>
+        </h1>
+
+        <!-- greeting -->
+        <div class="f2 fw3 f-headline">
+          <span id="greeting"></span>
+        </div>
+
+        <!-- weather -->
+        <div class="gray absolute top-0 right-0 pt4 pr4 f3 fw3">
+          <div id="weather"></div>
+        </div>
+
+        <!-- quote -->
+        <div class="white absolute bottom-2 left-0 w-100">
+          <div id="quote" class="f4 fw1 tc"></div>
+          <div id="author" class="f5 fw1 tc"></div>
+        </div>
+      </div>
+    </header>
+
+    <script src="MomentumForSafari.js"></script>
+  </body>
+</html>
