@@ -1,17 +1,9 @@
-/* 显示quote */
-safari.self.addEventListener("message", onMessage, false);
 document.addEventListener("DOMContentLoaded", function() {
   safari.self.tab.dispatchMessage(window.location.href, null);
   setData();
 });
 
-function onMessage(msg) {
-  if (msg.name === "quote") {
-    document.getElementById("quote").textContent = msg.message.quote;
-    document.getElementById("author").textContent = msg.message.author;
-  }
-}
-
+// 根据时间决定显示内容
 function greeting(hour) {
   if (hour >= 6 && hour < 12) {
     return "Good morning, Di";
